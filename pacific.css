@@ -1,0 +1,238 @@
+body {
+    background-color: #EAEAEA;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #002171;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+}
+nav {
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    transition: color 3s ease-out;
+
+}
+h2 {
+    color: #1976D2;
+    font-family: Georgia, Times New Roman, serif;
+    text-shadow: 1px 1px #CCCCCC;
+}
+dt {
+    color: #002171;
+}
+.resort {
+    color: #1976D2;
+    font-weight: bold;
+}
+h1 {
+    background-color: #002171;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Georgia, Times New Roman, serif;
+    text-align: center;
+    letter-spacing: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+h3 {
+    color: #000033;
+    font-family: Georgia, Times New Roman, serif;
+}
+main ul {
+    list-style-image: url(images/marker.gif)
+}
+footer {
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: "Georgia", "Times New Roman", serif;
+    padding: 20px;
+}
+#contact {
+    font-size: 90%;
+}
+#wrapper {
+    background-color: #90C7E3;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-repeat: no-repeat;
+}
+main {
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    overflow: auto;
+}
+#homehero {
+    height: 300px;
+    background-image:url(images/coast2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#yurthero {
+    height:300px;
+    background-image: url(images/yurt.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+#trailhero {
+    height:300px;
+    background-image:url(images/trail.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+* {
+    box-sizing: border-box;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+nav a:link {
+    color:#5C7FA3;
+}
+nav a:visited {
+    color:#344873;
+}
+nav a:hover {
+    color:#A52A2A;
+}
+nav li {
+    border-bottom: 1px darkblue;
+}
+table {
+    border: 2px;
+    border-color: #3399CC;
+    border-collapse: collapse;
+}
+td {
+    padding: 0.5em;
+    border: 2px;
+    border-color: #3399CC;
+    text-align: center;
+}
+th {
+    padding: 0.5em;
+    border: 2px;
+    border-color: #3399CC;
+}
+.text {
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #3399CC;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+input, textarea {
+    margin-bottom: .5em;
+}
+video, embed {
+    float: right;
+    padding-left: 20px;
+}
+@media (min-width: 600px) {
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .content main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2 {
+        grid-row: 1/2;
+        grid-column: 1/5;
+    }
+
+    section {
+        grid-row: 2/3;
+        grid-column: auto;
+    }
+
+    #special {
+        grid-row: auto;
+        grid-column: 1/5;
+    }
+
+    footer {
+        grid-row: auto;
+        grid-column: 1/5;
+    }
+    form {
+        width: 60%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+        grid-template-rows: auto;
+    }
+    input[type="submit"] {
+        grid-column: 2/2;
+        width: 9em;
+    }
+}
+@media (min-width: 1024px) {
+    nav ul {
+    flex-direction: column;
+    padding-top: 1em;
+}
+    nav {
+        text-align: left;
+        padding-left: 1em;
+        grid-row: auto;
+        grid-column: auto;
+    }
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: darkblue;
+        box-shadow: darkblue;
+        grid-template-columns: 180px;
+        grid-template-rows: auto;
+    }
+    header {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    div {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    main {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    footer {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
